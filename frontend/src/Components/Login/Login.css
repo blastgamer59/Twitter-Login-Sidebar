@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    background-color: white;
+    color: black;
+}
+.login-container {
+    display: flex;
+    flex: 1;
+    width: 100vw;
+}
+.image-container {
+    flex: 1;
+}
+.image {
+   max-width: 110%;
+   height: 70vh;
+   margin-left: 150px;
+   margin-top: 120px;
+}
+.form-container {
+    flex: 1;
+    padding: 50px;
+    margin: 10px;
+    align-content: center;
+}
+.form-box {
+    justify-content: left;
+    align-items: inherit;
+    grid-row: auto;
+}
+.heading{
+    font-size: 67px;
+    margin-left: 90px;
+    color: black;
+    margin-top: 15px;
+}
+.heading-2{
+    font-size: 30.5px;
+    margin-top: 40px;
+    margin-left: 90px;
+    color: black;
+}
+.google-icon{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.apple-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+}
+.google-button{
+   background-color:rgb(255, 255, 255);
+   color: black;
+   border-radius: 50px;
+   border: 1px solid #bbb;
+   cursor:pointer;
+   width: 48%;
+   padding: 10px 0px ;
+   font-size: 15px;
+   font-weight: 700;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   margin-left: 90px;
+   margin-top: 30px;
+}
+.apple-button{
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border: 1px solid #bbb;
+    cursor:pointer;
+    width: 48%;
+    padding: 9.5px 0px ;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.apple-button:hover, .google-button:hover{
+    background-color: #e9e9e9; 
+}
+.hr-with-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 48%;
+    gap: 2px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.hr-with-text::before,
+.hr-with-text::after {
+    content: '';
+    flex: 1;
+    margin-top: 3.1px;
+    border-bottom:1px solid #2e3135;
+}
+.hr-with-text:not(:empty)::before {
+    margin-right: .25em;
+}
+.hr-with-text:not(:empty)::after {
+    margin-left: .25em;
+}
+.create-account-button{
+    background-color: #1da1f2;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    width: 48%;
+    padding: 11px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.create-account-button:hover{
+    background-color: #0d8bec;
+}
+.paragraph{
+    font-size: 11px;
+    color:#6e7781 ;
+    margin-top: 5px;
+    margin-left: 89px;
+}
+.paragraph-link{
+    text-decoration: none;
+    color: #0d8bec;
+}
+.paragraph-link:hover{
+    text-decoration: underline;
+}
+.heading-h2{
+    font-size: 16.89px;
+    color: black;
+    margin-left: 90px;
+    margin-top: 40px;
+}
+.signin-button{
+    background-color: #1da1f2;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    width: 48%;
+    padding: 11px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 90px;
+    margin-top: 25px;
+}
+.signin-button:hover{
+    background-color:#0d8bec;
+}
+.footers {
+    padding: 20px;
+    text-align: center;
+    width: 95%;
+    margin-top: -40px;
+    margin-left: 30px;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-links a {
+    color: #6e7781;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-size: 0.875rem;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.link-para{
+    font-size: 0.799rem;
+    color: #6e7781 ;
+    margin-top: 6px;
+}
+.create-account-modal{
+    border-radius: 10px;
+}
+.modal-heading{
+    display: flex;
+    gap: 225px;
+}
+.modal-close-icon{
+    margin-left: -20px;
+    margin-top: -20px;
+    width: 25px;
+    height: 25px;
+}
+.modal-x-icon{
+    margin-top: -20px;
+}
+.modal-heading-h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.textfeild-1{
+    width: 421px;
+}
+.modal-h5{
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 25px;
+}
+.modal-p{
+    color: rgb(113, 118, 123);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 25px;
+}
+.dob-container {
+    display: flex;
+    margin-top: 20px;
+}
+input,
+select {
+  width: 35.9%;
+  margin-top: 5px;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin-left: 25px;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #1da1f2;
+}
+.modal-select-2{
+    width: 16.5%;
+    margin-top: 5px;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+.modal-next-button{
+    background-color:#1d9bf0;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    width: 70%;
+    padding: 11px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 30px;   
+}
+.modal1-heading-h2{
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 18px;
+}
+.modal-google-button{
+    background-color:rgb(255, 255, 255);
+    color: black;
+    border-radius: 50px;
+    border: 1px solid #bbb;
+    cursor:pointer;
+    width: 58%;
+    padding: 10px 0px ;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.modal-apple-button{
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border: 1px solid #bbb;
+    cursor:pointer;
+    width: 58%;
+    padding: 9.5px 0px ;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.modal-apple-button:hover, .modal-google-button:hover, .modal-forgotpassword-button:hover{
+    background-color: #e9e9e9; 
+}
+.modal-hr-with-text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 58%;
+    gap: 2px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.modal-hr-with-text::before,
+.modal-hr-with-text::after {
+    content: '';
+    flex: 1;
+    margin-top: 3.1px;
+    border-bottom:1px solid black;
+}
+.modal-hr-with-text:not(:empty)::before {
+    margin-right: .25em;
+}
+.modal-hr-with-text:not(:empty)::after {
+    margin-left: .25em;
+}
+.modal1-textfeild-1{
+    width: 59%;
+}
+.modal1-next-button{
+    background-color:#1d9bf0;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    width: 58%;
+    padding: 11px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.modal-forgotpassword-button{
+    background-color:white;
+    color: black;
+    border-radius: 50px;
+    border: 1px solid #bbb;
+    cursor:pointer;
+    width: 58%;
+    padding: 11px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.modal1-next-button:hover, .modal-login-button:hover{
+    background-color:#0d8bec;
+}
+.modal1-link{
+    display: flex;
+    margin-top: 60px;
+}
+.modal1-para{
+    color: rgb(113, 118, 123);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 130px;
+}
+.modal-signup-link{
+    text-decoration: none;
+    color: #0d8bec;
+    font-size: 16px;
+    margin-left: 2px;
+}
+.modal-signup-link:hover{
+    text-decoration: underlinew;
+}
+.modal-login-button{
+    background-color:#1d9bf0;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    width: 78%;
+    padding: 15px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.modal2-link{
+    display: flex;
+    margin-top: 20px;
+}
+.modal2-para{
+    color: rgb(113, 118, 123);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 50px;
+}
